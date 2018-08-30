@@ -2,6 +2,10 @@ import java.sql.Timestamp;
 import java.util.Observable;
 import java.util.Scanner;
 
+/**
+ * @author Chase Rony
+ * @author Dylan Basilice
+ */
 public class MachineRoomMonitor extends Observable {
     private Archive archive;
     private Alert alert;
