@@ -9,12 +9,19 @@ public class Thermometer implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        this.current= (int) arg;
-		System.out.printf("Current: %d", this.current);
-		for (int i = 0; i < Math.ceil(this.current / 3.0); i++) {
+		this.current= (int) arg;
+		int xCount = this.current / 3;
+		int space = xCount - 9;
+		if (space > 0) {
+			System.out.printf("%" + space + "sCurrent: %d\n", "", this.current);
+		}
+		else {
+			System.out.printf("Current: %d\n", this.current);
+		}
+		for (int i = 0; i < xCount; i++) {
 			System.out.print("X");
 		}
-		System.out.println();
+		System.out.println("^");
 		for (int i = 0; i <= 7; i ++) {
 			if (i != 7) {
 				System.out.printf("%-10d", i * 30);

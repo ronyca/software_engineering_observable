@@ -30,6 +30,7 @@ public class MachineRoomMonitor extends Observable {
             if (entry == 9999) {
                 System.out.println("Goodbye");
             } else {
+                setChanged();
                 notifyObservers(entry);
             }
         }

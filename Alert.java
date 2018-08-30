@@ -10,8 +10,10 @@ public class Alert implements Observer {
         int temp = (int) arg;
         if (temp > 110) {
             System.out.println("Warning: Temperature is dangerously high.");
+            System.out.println();
         } else if (temp < 32) {
             System.out.println("Warning: Temperature is dangerously low.");
+            System.out.println();
         }
     }
 }
