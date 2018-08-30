@@ -13,9 +13,9 @@ public class Archive implements Observer {
         int temp = (int) arg;
         this.archive.add(new Record(temp));
         System.out.println("Temperature History");
-        System.out.println("Timestamp             \tValue");
+        System.out.println("Timestamp             \t\tValue");
         for (Record record : this.archive) {
-            System.out.printf("%-22s\t%d\n", record.getTimestamp(), record.getTemp());
+            System.out.printf("%-22s\t\t%d\n", record.getTimestamp(), record.getTemp());
         }
         System.out.println();
     }

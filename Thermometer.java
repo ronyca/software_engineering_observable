@@ -30,5 +30,6 @@ public class Thermometer implements Observer {
 				System.out.printf("%d\n", i * 30);
 			}
 		}
+		System.out.println();
     }
 }
