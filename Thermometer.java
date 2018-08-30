@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Thermometer extends Observable{
 
-public static void main(String[] args)
 public void notfiyObserver()
 {
 	
