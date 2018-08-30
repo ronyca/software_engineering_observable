@@ -10,5 +10,9 @@ public class MachineRoomMonitor extends Observable{
         this.archive = new Archive();
         this.alert = new Alert();
         this.thermometer = new Thermometer();
+        addObserver(this.archive);
+        addObserver(this.alert);
+        addObserver(this.thermometer);
+
     }
 }

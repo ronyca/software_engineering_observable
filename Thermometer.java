@@ -1,7 +1,6 @@
+import java.util.Observer;
 
-//THIS CLASS IS THE SUBJECT
-
-public class Thermometer {
+public class Thermometer implements Observer {
 
 	public void notfiyObserver() {
 
