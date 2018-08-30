@@ -1,16 +1,19 @@
 import java.sql.Timestamp;
 
 public class Record {
-    private Float temp;
+    private int temp;
     private Timestamp timestamp;
-    public Record(Float temp) {
+
+    public Record(int temp) {
         this.temp = temp;
         this.timestamp = new Timestamp(System.currentTimeMillis());
     }
-    public getTemp() {
+
+    public int getTemp() {
         return this.temp;
     }
-    public getTimestamp() {
-        return this.timestamp;
+
+    public String getTimestamp() {
+        return this.timestamp.toString();
     }
 }
